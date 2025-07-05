@@ -76,7 +76,7 @@ const Dashboard: React.FC<DashboardProps> = ({ username, onLogout }) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 p-4">
       <div className="max-w-4xl mx-auto">
-        {/* Header */}
+        
         <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-6 border border-white/20 mb-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
@@ -98,12 +98,10 @@ const Dashboard: React.FC<DashboardProps> = ({ username, onLogout }) => {
           </div>
         </div>
 
-        {/* Task Form */}
         <div className="mb-6">
           <TaskForm onAddTask={handleAddTask} />
         </div>
 
-        {/* Task Filter */}
         <div className="mb-6">
           <TaskFilter
             tasks={tasks}
@@ -112,7 +110,6 @@ const Dashboard: React.FC<DashboardProps> = ({ username, onLogout }) => {
           />
         </div>
 
-        {/* Task List */}
         <TaskList
           tasks={filteredTasks}
           onToggle={handleToggleTask}
