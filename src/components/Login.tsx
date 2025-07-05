@@ -15,7 +15,6 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
     
     setIsLoading(true);
     
-    // Simulate loading for better UX
     await new Promise(resolve => setTimeout(resolve, 500));
     
     onLogin(username.trim());
